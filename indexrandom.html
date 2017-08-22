@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<body>
+
+    <head>
+        <link rel="stylesheet" type=text/css href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type=text/css href="rqm.css">
+    </head>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-center title">
+                <h1> Random Quote Generator </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <p id="quoteText"></p>
+                        <div id="display">
+                            <img id="img" />
+                        </div>
+                        <button class="btn btn-default rcorners2" onclick="getDogImage()">
+                            <span class="btn-text">New Quote<span>
+                        </button>
+                        <a class="btn btn-social-icon btn-twitter twitter-share-button" href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp"
+                            target="_blank">
+                        <button type="button" class="btn btn-default rcorners2">
+                            <span class="fa fa-twitter"></span><span class="btn-txt"> Tweet This <span>
+                        </button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="randomquote.js"></script>
+</body>
