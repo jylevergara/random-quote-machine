@@ -36,8 +36,12 @@ body{
   max-width: 100%;
 }
 
-.panel-lesswhite {
+.panel {
+  margin-bottom: 20;
+  background-color: #ccca97;
   opacity: 0.5;
+  border: 0px solid transparent;
+  border-radius: 11px;
 }
 
 .fa-twitter{
