@@ -1,24 +1,4 @@
 
-
-// var quotes = 
-/*console.log('$', $);
-
-function getDogImage() {
-    $.ajax({
-        url: 'https://dog.ceo/api/breeds/image/random',
-        success: function (result) {
-            console.log('result', result);
-            $('#img').attr('src', result.message);
-        }
-    });
-}
-getDogImage();
-*/
-function getRandomIntBetweenZeroAnd(funnyLines.length) {
-    return Math.floor((Math.random() * funnyLines.length));
-
-  
-
 var funnyLines = [
     '"Artist seeks Boss with vision impairment.',
     '"Daddy, what does FORMATTING DRIVE C: mean?',
@@ -611,13 +591,22 @@ var funnyLines = [
     'Your fault -- core dumped.',
     'Your password is pitifully obvious.',
     'ZAP! Process discontinued. Enter any 12-digit prime number to resume.',
-]
+];
+
+function setQuoteText(text) {
+    var quoteTextElem = document.querySelector('#quoteText');
+    quoteTextElem.innerHTML = text;
+}
+
+function getRandomIntBetweenZeroAnd(max) {
+    return Math.floor((Math.random() * max));
+}
 
 function submitText() {
     // Get a reference to the element with an id of myInput
     // var val = document.querySelector('#myInput').value;
-    // setSomeText(val);
     var rand = getRandomIntBetweenZeroAnd(funnyLines.length);
     console.log('rand', rand);
-    putSomeImage(funnyLines[rand]);
+    setQuoteText(funnyLines[rand]);
 }
+submitText();
