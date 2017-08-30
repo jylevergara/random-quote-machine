@@ -12,6 +12,12 @@ body{
   background-size: cover;
 }
 
+
+.col-xs-12 {
+  width: 100%;
+  color: #78c733;
+}
+
 .title h1 {
   font-size: 5em;
   font-family: 'Engagement', cursive;
@@ -38,21 +44,47 @@ body{
 
 .panel {
   margin-bottom: 20;
-  background-color: #ccca97;
-  opacity: 0.5;
+ /* background-color: #ccca97;*/
+  opacity: 0.8;
   border: 0px solid transparent;
   border-radius: 11px;
 }
 
-.fa-twitter{
-  color: #faf;
+p {
+  margin: 50px 0 -100px;
 }
+
+.fa-twitter{
+  color: #8FC6E8;
+}
+
+#quoteText {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 35px;
+  color: #3E6C15;
+}
+
+/* .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  float: left;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+  float: left;  
+}
+
+.col-xs-6 {
+  width: 36%;
+  float: left;
+} */
+
 
 .rcorners2 {
     border-radius: 3.2rem;
     border: 0.2rem solid #73AD21;
     width: 8rem;
     height: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }      
 
 .btn {
@@ -61,5 +93,5 @@ body{
 }
 
 .btn-text {
-  opacity: .87;
+  opacity: 1;
 }
